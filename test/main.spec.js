@@ -5,11 +5,12 @@ var expect = chai.expect;
 
 fs.readdirSync("lib") //
   .map((e) => require(`../lib/${e}`))
-  .forEach(({ desc, fn, params }) => {
-    describe(desc, function () {
-      it("test", function () {
-        params().forEach(([input, output]) => {
-          expect(fn(input)).to.equal(output);
+  .forEach(({ name, fn, params }) => {
+    describe(name, function () {
+      params().forEach(({ args, target }, i) => {
+        it(`test case ${i + 1}`, function () {
+          let result = fn(...args);
+          expect(result).to.deep.equal(target);
         });
       });
     });
