@@ -4,7 +4,7 @@
   "description": "Leet Code with Unit Test.",
   "scripts": {
     "test": "mocha test",
-    "index": "node lib/index.js"
+    "index": "node index.js"
   },
   "author": "",
   "license": "Apache-2.0",
