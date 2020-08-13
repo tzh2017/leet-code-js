@@ -1,0 +1,19 @@
+{
+  "name": "leet-code",
+  "version": "1.0.0",
+  "description": "Leet Code with Unit Test.",
+  "scripts": {
+    "test": "mocha test",
+    "index": "node lib/index.js"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/tzh-goon/leet-code-js#readme",
+  "dependencies": {
+    "chai": "3.4.1",
+    "sinon": "1.17.2",
+    "mocha": "2.2.5",
+    "sinon-chai": "2.8.0",
+    "lodash": "3.9.3"
+  }
+}
